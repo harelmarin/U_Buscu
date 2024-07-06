@@ -1,0 +1,143 @@
+@font-face {
+    font-family: 'Bold';
+    src: url(../assets/font/Baloo2-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Regular';
+    src: url(../assets/font/Baloo2-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    background-color: #F1F6F9;
+}
+header {
+    width: 100%;
+    background-color: #F1F6F9;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15px;
+    
+}
+
+header h1 {
+    font-family: 'Bold';
+    font-size: 25px;
+}
+
+header h3 {
+    font-family: 'Regular';
+    font-size: 12px;
+    font-style: italic;
+}
+
+header h4 {
+    font-family: 'Regular';
+    font-size: 12px;
+    font-style: italic;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+.container-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: auto;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 15px;
+}
+
+.container-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+.container-main img {
+    width: 80%;
+    height: 360px;
+    border-radius: 5px;
+}
+
+
+.container-main-text {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 20px;
+}
+
+.container-main-text p {
+    font-family: 'Regular';
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.1;
+}
+
+.container-second {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+
+.container-mesproduits {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #337356;
+    width: 80%;
+    height: 80px;
+    border-radius: 25px;
+    margin-top: 20px;
+}
+
+.container-mesproduits h2 {
+    font-family: 'Bold';
+    font-size: 25px;
+    color: white;
+}
+
+.container-produits {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 80%;
+}
+
+.produits {
+    margin-top: 10px;
+    width: 150px;
+    height: 150px;
+}
+
+.produits img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
