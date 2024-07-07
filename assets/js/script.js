@@ -22,3 +22,9 @@ document.addEventListener('DOMContentLoaded', function() {
         console.error('One or more elements not found: burgerMenu, sideMenu, or closeBtn');
     }
 });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const container = document.querySelector('body');
+    container.classList.add('loaded');
+});

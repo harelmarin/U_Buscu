@@ -27,8 +27,15 @@ body {
     background-image: url('../assets/img/IMG_2455.JPG'); 
     background-size: cover;
     background-position: center; 
+    opacity: 0;
+    transform: scale(0.8); 
+    transition: opacity 2s ease, transform 2s ease; 
 }
 
+body.loaded {
+    opacity: 1; 
+    transform: scale(1); 
+}
 
 /* HEADER */
 
