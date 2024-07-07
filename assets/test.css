@@ -1,20 +1,21 @@
-/* Réinitialiser les marges et les paddings */
+
+/* ALL */ 
+
+
 * {
     margin: 0;
     padding: 0;
 }
 
-/* Utiliser les polices personnalisées */
 @font-face {
     font-family: 'Bold';
-    src: url(../assets/font/Baloo2-Bold.ttf);
+    src: url(../assets/font/IntegralCF-Bold.ttf);
 }
 
 @font-face {
-    font-family: 'Regular';
-    src: url(../assets/font/Baloo2-Regular.ttf);
+    font-family: 'Paralucent';
+    src: url(../assets/font/ParalucentMedium.otf);
 }
-
 
 html, body {
     height: 100%;
@@ -28,9 +29,11 @@ body {
     background-position: center; 
 }
 
+
+/* HEADER */
+
 header {
     color: #F1F6F9;
-    
 }
 
 header h1 {
@@ -39,14 +42,115 @@ header h1 {
 }
 
 header h3 {
-    font-family: 'Regular';
-    font-size: 30px;
+    font-family: 'Paralucent';
+    font-size: 25px;
     font-style: italic;
 }
 
 .container-header {
-    padding-left: 38px;
-    padding-top: 5px;
+    padding-left: 10vw;
+    padding-top: 1vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.texte-header {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* MENU  BURGER */
+
+.container-menu-burger {
+    padding-top: 2.5vh;
+    padding-left: 25vw;
+}
+
+.burger {
+    cursor: pointer;
+    position: fixed;
+    top: 27px;
+    right: 20px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+}
+
+.barre {
+    width: 100%;
+    height: 4px;
+    background-color:  #F1F6F9;
+    transition: 0.4s;
+    border-radius: 50px;
+}
+
+.burger.change .barre1 {
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.burger.change .barre2 {
+    opacity: 0;
+}
+
+.burger.change .barre3 {
+    transform: rotate(45deg) translate(-6px, -6px);
+}
+
+
+
+/* SLIDER */
+
+
+ul {
+    list-style: none;
+}
+.side-menu {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;   
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 10vh;
+    z-index: 999;
+    border-radius: 0 0 0 20px;
+    background-color: transparent;
+    background-color: aqua;
+    list-style: none;
+}
+
+.side-menu a {
+    text-decoration: none;
+    font-size: 30px;
+    color : #F1F6F9;
+    transition: 0.3s;
+    font-family: 'Paralucent';
+}
+
+li {
+    margin-bottom: 2vh;
+}
+
+
+
+
+/* MAIN */ 
+
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
 }
 main button {
     width: 300px;
@@ -55,7 +159,6 @@ main button {
     font-size: 30px;
     background-color: transparent;
     border-radius: 5px;
-    margin-top: 20px;
     border: solid 2px #F1F6F9;
     color: #F1F6F9;
 }
