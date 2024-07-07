@@ -48,7 +48,7 @@ header h3 {
 }
 
 .container-header {
-    padding-left: 10vw;
+    padding-left: 7vw;
     padding-top: 1vh;
     display: flex;
     flex-direction: row;
@@ -110,7 +110,6 @@ ul {
 }
 .side-menu {
     display: flex;
-    align-items: center;
     flex-direction: column;
     height: 100%;   
     width: 0;
@@ -120,24 +119,54 @@ ul {
     background-color: transparent;
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 10vh;
-    z-index: 999;
-    border-radius: 0 0 0 20px;
+    z-index: 1;
     background-color: transparent;
-    background-color: aqua;
+    background-color: rgb(51, 51, 38);
     list-style: none;
+    padding-top: 10vh;
 }
+
 
 .side-menu a {
     text-decoration: none;
-    font-size: 30px;
+    font-size: 25px;
     color : #F1F6F9;
     transition: 0.3s;
     font-family: 'Paralucent';
+    text-align: center;
 }
 
 li {
     margin-bottom: 2vh;
+}
+
+.side-menu-content {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+
+
+.nav-slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-footer {
+    margin-top: 65vh;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 5vh;
+}
+
+.nav-footer a {
+    font-size: 18px;
+    font-style: italic;
 }
 
 

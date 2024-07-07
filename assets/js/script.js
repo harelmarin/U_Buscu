@@ -5,11 +5,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if (burgerMenu && sideMenu && closeBtn) {
         burgerMenu.addEventListener('click', function() {
-            if (sideMenu.style.width === '40vw') {
+            if (sideMenu.style.width === '30vw') {
                 sideMenu.style.width = '0';
                 burgerMenu.classList.remove('change');
             } else {
-                sideMenu.style.width = '40vw';
+                sideMenu.style.width = '30vw';
                 burgerMenu.classList.add('change');
             }
         });
