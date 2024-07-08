@@ -119,7 +119,7 @@ ul {
 .side-menu {
     display: flex;
     flex-direction: column;
-    height: 100vh;   
+    height: 80vh;   
     width: 0;
     position: fixed;
     top: 0;
@@ -128,53 +128,32 @@ ul {
     overflow-x: hidden;
     transition: 0.5s;
     z-index: 1;
-     /* background-color: rgb(23, 29, 30); */
      background-color: #F1F6F9;
     opacity: 0.9;
     list-style: none;
-    padding-top: 10vh;
+    padding-top: 14vh;
     padding-bottom: 10vh;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
 }
 
 
 .side-menu a {  
     text-decoration: none;
-    font-size: 25px;
+    font-size: 15px;
     color : #000000;
     transition: 0.3s;
-    font-family: 'Paralucent';
+    font-family: 'Bold';
     text-align: center;
 }
 
 li {
     margin-bottom: 2vh;
 }
-
-.side-menu-content {
-    display: flex;
-    flex-direction: column;
-    height: 90%;
-}
-
 .nav-slider {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.nav-footer {
-    margin-top: 50vh;
-    height: 15vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    padding-bottom: 5vh;
-}
-
-.nav-footer a {
-    font-size: 20px;
-    font-style: italic;
+    text-align: center;
 }
 
 
@@ -187,7 +166,9 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     height: 80%;
+
 }
 main button {
     width: 300px;
