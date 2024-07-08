@@ -97,7 +97,7 @@ header h3 {
 }
 
 .burger.change .barre1 {
-    transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-8px, 4px);
 }
 
 .burger.change .barre2 {
@@ -105,7 +105,7 @@ header h3 {
 }
 
 .burger.change .barre3 {
-    transform: rotate(45deg) translate(-6px, -6px);
+    transform: rotate(45deg) translate(-8px, -4px);
 }
 
 

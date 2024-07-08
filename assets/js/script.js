@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if (burgerMenu && sideMenu && closeBtn) {
         burgerMenu.addEventListener('click', function(event) {
-            event.stopPropagation(); // Prevent the click from bubbling up to the document
+            event.stopPropagation();
             if (sideMenu.style.width === '35vw') {
                 closeMenu();
             } else {
@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 
         closeBtn.addEventListener('click', function(event) {
-            event.stopPropagation(); // Prevent the click from bubbling up to the document
+            event.stopPropagation(); 
             closeMenu();
         });
 
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 
         sideMenu.addEventListener('click', function(event) {
-            event.stopPropagation(); // Prevent the click inside the sideMenu from bubbling up to the document
+            event.stopPropagation(); 
         });
     } else {
         console.error('One or more elements not found: burgerMenu, sideMenu, or closeBtn');
