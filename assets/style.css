@@ -1,46 +1,7 @@
 
-/* ALL */ 
-
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
-@font-face {
-    font-family: 'Bold';
-    src: url(../assets/font/IntegralCF-Bold.ttf);
-}
-
-@font-face {
-    font-family: 'Paralucent';
-    src: url(../assets/font/ParalucentMedium.otf);
-}
-
-html, body {
-    height: 100%;
-    width: 100%;
-}
-
-
-body {
-    background-image: url('../assets/img/IMG_2455.JPG'); 
-    background-size: cover;
-    background-position: center; 
-    opacity: 0;
-    transform: scale(0.8); 
-    transition: opacity 3s ease, transform 3s ease;
-}
-
-body.loaded {
-    opacity: 1; 
-    transform: scale(1); 
-}
-
 /* HEADER */
 
 header {
-    /*color: #F1F6F9; */
     color: black;
 }
 
@@ -55,6 +16,11 @@ header h3 {
     font-style: italic;
 }
 
+header a {
+    text-decoration: none;
+    color: black;
+
+}
 .container-header {
     padding-left: 7vw;
     padding-top: 1vh;
@@ -156,13 +122,45 @@ li {
     text-align: center;
 }
 
+/* ACCUEIL */ 
 
 
+* {
+    margin: 0;
+    padding: 0;
+}
 
-/* MAIN */ 
+@font-face {
+    font-family: 'Bold';
+    src: url(../assets/font/IntegralCF-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Paralucent';
+    src: url(../assets/font/ParalucentMedium.otf);
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
 
 
-main {
+.body-accueil {
+    background-image: url('../assets/img/IMG_2455.JPG'); 
+    background-size: cover;
+    background-position: center; 
+    opacity: 0;
+    transform: scale(0.8); 
+    transition: opacity 3s ease, transform 3s ease;
+}
+
+body.loaded {
+    opacity: 1; 
+    transform: scale(1); 
+}
+
+.main-accueil {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -170,7 +168,11 @@ main {
     height: 80%;
 
 }
-main button {
+.main-accueil a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
     width: 300px;
     height: 80px;
     font-family: 'Bold';
@@ -179,4 +181,41 @@ main button {
     border-radius: 5px;
     border: solid 2px #F1F6F9;
     color: #F1F6F9;
+}
+
+
+
+/* PRODUITS */
+
+
+.body-produits {
+    opacity: 0;
+    transform: scale(0.8); 
+    transition: opacity 4s ease, transform 4s ease;
+    background-color: #32A977;
+}
+
+.main-produits {
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    width: 100%;
+    background-color: #D6483E;
+    padding-left: 7vw;
+    padding-top: 7vh;
+}
+
+.main-produits h3 {
+    font-family: 'Bold';
+    font-size: 30px;
+    color: #010101;
+}
+
+/* CONTACT */
+
+.body-contact {
+    opacity: 0;
+    transform: scale(0.8); 
+    transition: opacity 4s ease, transform 4s ease;
+    background-color: #D6483E;
 }
