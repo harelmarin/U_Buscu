@@ -190,8 +190,10 @@ html, body {
 
 
 .body-produits {
-    background: linear-gradient(to bottom, #32A977, #94cfb6);
-   
+    /*background: linear-gradient(to bottom, #32A977, #94cfb6);*/
+    background: linear-gradient(to bottom, #F1F6F9, #32A977);
+    background-attachment: fixed;
+    height: 100%;
 
 }
 
@@ -203,10 +205,35 @@ html, body {
 }
 
 .main-produits h3 {
-    padding-left: 7vw;
     font-family: 'Bold';
-    font-size: 30px;
-    color: black;
+    font-size:25px;
+    color: #F1F6F9;
+}
+
+
+.container-produits {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.fromage {
+    text-align: center;
+    border-radius: 5px;
+    width: 80%;
+    padding: 2vw;
+    background-color: black;
+    color: #F1F6F9;
+    margin-bottom: 5vh;
+}
+
+.text-fromage {
+    width: 70%;
+    text-align: justify;
+    font-family: 'ParaLucent';
+    font-size: 18px;
+    line-height: 1.1;
     margin-bottom: 5vh;
 }
 
@@ -222,7 +249,7 @@ html, body {
     justify-content: center;
 }
 .swiper {
-    width: 100%;
+    width: 80%;
     height: 40vh;
     display: flex;
     flex-direction: row;
@@ -265,16 +292,17 @@ html, body {
 .swiper-thumbs {
     height: 10vh;
     margin-top: 5vh;
-    width: 95%;
-    margin-left: 3vw
+    width: 80%;
+    margin-left: 3vw;
+    margin-bottom: 5vh;
 }
 
 .swiper-slide-thumb-active {
     opacity: 0.5;
 }
 .swiper-thumbs img {
-    height: 100%;
-    width: 80px;
+    height: 60px;
+    width: 60px;
     opacity: 0.9;
     border-radius: 5px;
 }
@@ -283,12 +311,8 @@ html, body {
 
 
 
-
 /* CONTACT */
 
 .body-contact {
-    opacity: 0;
-    transform: scale(0.8); 
-    transition: opacity 4s ease, transform 4s ease;
     background-color: #D6483E;
 }
