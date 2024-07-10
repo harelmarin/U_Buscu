@@ -253,6 +253,8 @@ html, body {
     display: flex;
     flex-direction: row;
     overflow-x: hidden;
+    border: #BAC493 2px solid ;
+    border-radius: 5px;
 }
 
 .swiper-wrapper {
@@ -339,20 +341,20 @@ html, body {
 }
 
 .text-exploitation {
-    width: 80%;
+    width: 70%;
     text-align: justify;
     font-family: 'ParaLucent';
     font-size: 18px;
     line-height: 1.1;
-    margin-bottom: 5vh;
 }
 
 .maps {
-    margin-top: 5vh;
+    margin-top: 4vh;
     border: #BAC493 2px solid;
     border-radius: 5px;
     width: 300px;
     height: 300px;
+    margin-bottom: 4vh;
 }
 
 /* CONTACT */
