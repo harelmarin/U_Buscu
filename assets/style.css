@@ -18,7 +18,7 @@ header h3 {
 
 header a {
     text-decoration: none;
-    color: black;
+    color: #BAC493;
 
 }
 .container-header {
@@ -190,9 +190,7 @@ html, body {
 
 
 .body-produits {
-    /*background: linear-gradient(to bottom, #32A977, #94cfb6);*/
-    background: linear-gradient(to bottom, #F1F6F9, #57be93);
-    background-attachment: fixed;
+    background-color: #F1F6F9;
     height: 100%;
 
 }
@@ -223,12 +221,13 @@ html, body {
     border-radius: 5px;
     width: 80%;
     padding: 2vw;
-    background-color: black;
+    background-color: #BAC493;
     color: #F1F6F9;
     margin-bottom: 5vh;
 }
 
 .text-fromage {
+    color: black;
     width: 70%;
     text-align: justify;
     font-family: 'ParaLucent';
@@ -277,10 +276,12 @@ html, body {
 
 .slide-text h4 {
     font-size: 20px;
+    color: #000000;
 }
 
 .slide-text h5 {
     font-size: 15px;
+    color: #000000;
 }
 
 .swiper-slide img {
@@ -311,8 +312,7 @@ html, body {
 /* A PROPOS */ 
 
 .body-apropos {
-    background: linear-gradient(to bottom, #F1F6F9, #bd5e41);
-    background-attachment: fixed;
+    background: #F1F6F9;
     height: 100%;
     width: 100%;
 }
@@ -332,14 +332,14 @@ html, body {
     border-radius: 5px;
     width: 80%;
     padding: 2vw;
-    background-color: black;
+    background-color: #BAC493;
     color: #F1F6F9;
     margin-bottom: 5vh;
     font-family: 'Bold';
 }
 
 .text-exploitation {
-    width: 70%;
+    width: 80%;
     text-align: justify;
     font-family: 'ParaLucent';
     font-size: 18px;
@@ -347,9 +347,12 @@ html, body {
     margin-bottom: 5vh;
 }
 
-.text-exploitation iframe {
-    border-radius: 5px;
+.maps {
     margin-top: 5vh;
+    border: #BAC493 2px solid;
+    border-radius: 5px;
+    width: 300px;
+    height: 300px;
 }
 
 /* CONTACT */
