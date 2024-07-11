@@ -360,5 +360,31 @@ html, body {
 /* CONTACT */
 
 .body-contact {
-    background-color: #D6483E;
+    background-color: #F1F6F9;
+}
+
+.container-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 7vh;
+}
+.contact {
+    text-align: center;
+    border-radius: 5px;
+    width: 80%;
+    padding: 2vw;
+    background-color: #BAC493;
+    color: #F1F6F9;
+    margin-bottom: 5vh;
+    font-family: 'Bold';
+}
+
+.text-contact {
+    width: 70%;
+    text-align: justify;
+    font-family: 'ParaLucent';
+    font-size: 18px;
+    line-height: 1.1;
 }
