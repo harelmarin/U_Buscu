@@ -418,9 +418,14 @@ html, body {
     width: 70%;
     text-align: start;
     font-family: 'ParaLucent';
-    font-size: 18px;
+    font-size: 15px;
     line-height: 1.6;
     padding-bottom: 6vh;
+}
+
+.text-mentions a {
+    color: #000000;
+    text-decoration: none;
 }
 
 .text-mentions h2 {
