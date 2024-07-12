@@ -179,8 +179,8 @@ html, body {
     font-size: 30px;
     background-color: transparent;
     border-radius: 5px;
-    border: solid 2px #F1F6F9;
-    color: #F1F6F9;
+    border: solid 2px #BAC493;
+    color: #BAC493;
 }
 
 
@@ -386,4 +386,47 @@ html, body {
     font-family: 'ParaLucent';
     font-size: 18px;
     line-height: 1.1;
+}
+
+
+/* MENTIONS LEGALES */
+
+.body-mentions {
+    background-color: #F1F6F9;
+}
+
+.container-mentions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 7vh;
+}
+
+.mentions {
+    text-align: center;
+    border-radius: 5px;
+    width: 80%;
+    padding: 2vw;
+    background-color: #BAC493;
+    color: #F1F6F9;
+    margin-bottom: 5vh;
+    font-family: 'Bold';
+}
+
+.text-mentions {
+    width: 70%;
+    text-align: start;
+    font-family: 'ParaLucent';
+    font-size: 18px;
+    line-height: 1.6;
+    padding-bottom: 6vh;
+}
+
+.text-mentions h2 {
+    font-size: 25px;
+    color: #000000;
+    text-align: center;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
 }
