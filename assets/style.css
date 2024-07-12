@@ -13,7 +13,6 @@ header h1 {
 header h3 {
     font-family: 'Paralucent';
     font-size: 25px;
-    font-style: italic;
 }
 
 header a {
@@ -148,7 +147,7 @@ html, body {
 
 
 .body-accueil {
-    background-image: url('../assets/img/IMG_2455.JPG'); 
+    background-image: url('../assets/img/Background.JPG'); 
     background-size: cover;
     background-position: center; 
     opacity: 0;
@@ -164,7 +163,7 @@ html, body {
 .main-accueil {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: end;
     flex-direction: column;
     height: 80%;
 
