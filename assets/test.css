@@ -1,4 +1,22 @@
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Bold';
+    src: url(../assets/font/Century\ Gothic\ Std\ Bold.otf);
+}   
+
+
+@font-face {
+    font-family: 'Regular';
+    src: url(../assets/font/Century\ Gothic\ Std\ Regular.otf);
+}
+
+
+
 /* HEADER */
 
 header {
@@ -6,12 +24,12 @@ header {
 }
 
 header h1 {
-    font-family: 'Test';
+    font-family: 'Bold';
     font-size: 60px;
 }
 
 header h3 {
-    font-family: 'TestRe';
+    font-family: 'Regular';
     font-size: 25px;
 }
 
@@ -31,6 +49,15 @@ header a {
     display: flex;
     flex-direction: column;
 }
+
+hr {
+    align-items: center;
+    width: 100%;
+    opacity: 0.2;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
 
 
 /* MENU  BURGER */
@@ -108,7 +135,7 @@ ul {
     font-size: 15px;
     color : #000000;
     transition: 0.3s;
-    font-family: 'Test';
+    font-family: 'Bold';
     text-align: center;
 }
 
@@ -122,28 +149,58 @@ li {
     text-align: center;
 }
 
-/* ACCUEIL */ 
-
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
-@font-face {
-    font-family: 'Bold';
-    src: url(../assets/font/IntegralCF-Bold.ttf);
-}
-
-@font-face {
-    font-family: 'Paralucent';
-    src: url(../assets/font/ParalucentMedium.otf);
-}
+/* BASE */ 
 
 html, body {
     height: 100%;
     width: 100%;
 }
+
+
+.main-base {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 2vh;
+}
+
+.container-pres {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container-titre {    
+    margin-bottom: 2vh;
+    height: 15vh;
+    width: 50%;
+}
+
+.container-titre h3 {
+    font-size: 25px;
+    font-family: 'TestRe';
+    margin-bottom: 2vh;
+    color: #000000;
+    text-align: center;
+}
+
+.container-titre p {
+    font-size: 15px;
+    font-family: 'TestRe';
+    color: #000000;
+    text-align: center; 
+}
+
+.body-base {
+    background-color: #F1F6F9;
+    height: 100%;
+
+}
+
+/* ACCUEIL */ 
 
 
 .body-accueil {
@@ -175,7 +232,7 @@ html, body {
     text-decoration: none;
     width: 300px;
     height: 80px;
-    font-family: 'Test';
+    font-family: 'Bold';
     font-size: 30px;
     background-color: transparent;
     border-radius: 5px;
@@ -188,260 +245,142 @@ html, body {
 /* PRODUITS */
 
 
-.body-produits {
-    background-color: #F1F6F9;
-    height: 100%;
 
+.presentation {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; 
+    width: 95%; 
+    max-width: 1200px;
+    
 }
-
-.main-produits {
-    display: flex;
-    flex-direction: column; 
+.presentation img {
     width: 100%;
-    padding-top: 7vh;
-}
-
-.main-produits h3 {
-    font-family: 'Bold';
-    font-size:25px;
-    color: #F1F6F9;
-}
-
-
-.container-produits {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.fromage {
-    text-align: center;
+    height: 50vh;
+    object-fit: cover; 
+    transition: transform 0.7s ease;
     border-radius: 5px;
-    width: 80%;
-    padding: 2vw;
-    background-color: #BAC493;
-    color: #F1F6F9;
-    margin-bottom: 5vh;
 }
 
-.text-fromage {
-    color: black;
-    width: 70%;
-    text-align: justify;
-    font-family: 'ParaLucent';
-    font-size: 18px;
-    line-height: 1.1;
-    margin-bottom: 5vh;
+.presentation img:hover {
+    transform: scale(1.05); 
+    cursor: pointer;
 }
 
-
-
-/* Swiper For Produits */
-
-
-.container-swiper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.swiper {
-    width: 80%;
-    height: 40vh;
+.cont-text {
     display: flex;
     flex-direction: row;
-    overflow-x: hidden;
-    border: #BAC493 2px solid ;
-    border-radius: 5px;
-}
-
-.swiper-wrapper {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-}
-
-.swiper-slide {
-    position: relative;
-}
-
-.slide-text {
-    position: absolute;
-    bottom : 2vh;
-    left: 4vw;
-    padding-left: 3vw;
-    color: #F1F6F9;
-    font-size: 15px; 
-    width: 80%;
-    opacity: 0.7;
-    border-radius: 5px;
-
-    font-family: 'Bold';
-    background-color: #F1F6F9;
+    justify-content: left;
+    justify-content: space-between;
+    padding-top: 2vh;
+    margin-bottom: 5vh;
 
 }
-
-.slide-text h4 {
-    font-size: 20px;
-    color: #000000;
-}
-
-.slide-text h5 {
+.cont p {
     font-size: 15px;
-    color: #000000;
-}
-
-.swiper-slide img {
-    width: 100%;
-    height: 40vh;
-    border-radius: 5px;
-}
-
-.swiper-thumbs {
-    height: 10vh;
-    margin-top: 5vh;
-    width: 80%;
-    margin-left: 3vw;
-    margin-bottom: 5vh;
-}
-
-.swiper-slide-thumb-active {
-    opacity: 0.5;
-}
-.swiper-thumbs img {
-    height: 60px;
-    width: 60px;
-    opacity: 0.9;
-    border-radius: 5px;
+    font-family: 'Regular';
+    margin-bottom: 2vh;
 }
 
 
-/* A PROPOS */ 
+/* EXPLOITATION */ 
 
-.body-apropos {
-    background: #F1F6F9;
+
+.container-exploitation {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 90%;
     height: 100%;
-    width: 100%;
+    padding-bottom: 5vh;
+    margin: 0 auto;
+    margin-top: 2vh;
 }
-
-
-.container-apropos {
-    width: 100%;
+.container-titre-exploitation {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    padding-top: 7vh;
+    align-items: center;
+    width: 50%;
 }
 
-.exploitation {
+.container-titre-exploitation h3 {
+    font-size: 25px;
+    font-family: 'TestRe';
+    margin-bottom: 2vh;
+    color: #000000;
     text-align: center;
-    border-radius: 5px;
-    width: 80%;
-    padding: 2vw;
-    background-color: #BAC493;
-    color: #F1F6F9;
-    margin-bottom: 5vh;
-    font-family: 'Bold';
 }
 
-.text-exploitation {
-    width: 70%;
-    text-align: justify;
-    font-family: 'ParaLucent';
-    font-size: 18px;
-    line-height: 1.1;
+.container-titre-exploitation p {
+    font-size: 15px;
+    font-family: 'TestRe';
+    color: #000000;
+    text-align: center; 
 }
 
 .maps {
-    margin-top: 4vh;
-    border: #BAC493 2px solid;
+    flex: 1 1 60%; 
+    position: relative;
+    padding-bottom: 0;
+}
+
+.map-responsive {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+
+.map-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
     border-radius: 5px;
-    width: 300px;
-    height: 300px;
-    margin-bottom: 4vh;
 }
 
-/* CONTACT */
-
-.body-contact {
-    background-color: #F1F6F9;
+.container-text {
+    flex: 1 1 40%; 
+    margin-left: 20px;
+    padding: 10px;
+    border-radius: 5px; 
 }
 
-.container-contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-top: 7vh;
+.container-text p {
+    font-size: 15px;
+    font-family: 'Regular';
+    margin-bottom: 2vh;
 }
-.contact {
-    text-align: center;
-    border-radius: 5px;
-    width: 80%;
-    padding: 2vw;
-    background-color: #BAC493;
-    color: #F1F6F9;
-    margin-bottom: 5vh;
-    font-family: 'Bold';
-}
-
-.text-contact {
-    width: 70%;
-    text-align: justify;
-    font-family: 'ParaLucent';
-    font-size: 18px;
-    line-height: 1.1;
-}
-
 
 /* MENTIONS LEGALES */
 
-.body-mentions {
-    background-color: #F1F6F9;
-}
-
-.container-mentions {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-top: 7vh;
-}
-
-.mentions {
-    text-align: center;
-    border-radius: 5px;
-    width: 80%;
-    padding: 2vw;
-    background-color: #BAC493;
-    color: #F1F6F9;
-    margin-bottom: 5vh;
-    font-family: 'Bold';
-}
-
 .text-mentions {
-    width: 70%;
-    text-align: start;
-    font-family: 'ParaLucent';
-    font-size: 15px;
-    line-height: 1.6;
-    padding-bottom: 6vh;
-}
-
-.text-mentions a {
-    color: #000000;
-    text-decoration: none;
+  width: 50%;
 }
 
 .text-mentions h2 {
     font-size: 25px;
+    font-family: 'Regular';
+    margin-bottom: 2vh;
     color: #000000;
     text-align: center;
-    margin-top: 4vh;
-    margin-bottom: 4vh;
 }
+
+.text-mentions p {
+    font-size: 15px;
+    font-family: 'Regular';
+    color: #000000;
+    text-align: center; 
+    line-height: 1.6;
+    padding-bottom: 6vh;
+}
+
+/* MEDIA QUERIES */
+
 
 
 @media screen and (min-width: 1350px) {
@@ -476,104 +415,33 @@ html, body {
         background-color: #BAC493;
         color: #F1F6F9;
     }
+}
 
-    .swiper {
-        height: 50vh;
-        width: 30vw;
+@media (max-width: 768px) {
+
+    .container-titre-exploitation {
+        margin-bottom: 3vh;
     }
-    
+    .container-exploitation {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0;
+    }
+
+    .maps, .container-text {
+        flex: 1 1 100%;
+        width: 100%;
+        margin-left: 0;
+        padding-bottom: 20px;
+    }
+
+    .container-text {
+        padding-top: 20px;
+    }
+    .text-mentions {
+        width: 80%;
+      }
 }
-
-
-
-
-/* TEST */
-
-.container-pres {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.container-pro {    
-    margin-bottom: 2vh;
-    height: 15vh;
-}
-
-.container-pro h3 {
-    font-size: 25px;
-    font-family: 'TestRe';
-    margin-bottom: 2vh;
-    color: #000000;
-    text-align: center;
-}
-
-.container-pro p {
-    font-size: 15px;
-    font-family: 'TestRe';
-    color: #000000;
-    text-align: center; 
-}
-.presentation {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px; 
-    width: 95%; 
-    max-width: 1200px;
-    
-}
-.presentation img {
-    width: 100%;
-    height: 50vh;
-    object-fit: cover; 
-    transition: transform 0.7s ease;
-    border-radius: 5px;
-}
-
-.presentation img:hover {
-    transform: scale(1.05); 
-    cursor: pointer;
-}
-
-.cont-text {
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    justify-content: space-between;
-    padding-top: 2vh;
-    font-family: 'TestRe';
-    font-size: 15px;
-    margin-bottom: 5vh;
-
-}
-.cont h3 {
-    font-size: 30px;
-    font-family: 'Test';
-    margin-bottom: 2vh;
-}
-
-
-hr {
-    align-items: center;
-    width: 100%;
-    opacity: 0.2;
-    margin-top: 2vh;
-    margin-bottom: 2vh;
-}
-
-@font-face {
-    font-family: 'Test';
-    src: url(../assets/font/Century\ Gothic\ Std\ Bold.otf);
-}   
-
-
-@font-face {
-    font-family: 'TestRe';
-    src: url(../assets/font/Century\ Gothic\ Std\ Regular.otf);
-}
-
-
 
 @media screen and (max-width: 500px) {
     .presentation {
@@ -582,3 +450,8 @@ hr {
     
     
 }
+
+
+
+
+
