@@ -377,6 +377,11 @@ html, body {
     padding-bottom: 6vh;
 }
 
+.text-mentions a {
+    color: black;
+    text-decoration: none;
+}
+
 /* MEDIA QUERIES */
 
 
