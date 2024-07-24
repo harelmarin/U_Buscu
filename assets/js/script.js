@@ -45,32 +45,4 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-document.addEventListener('DOMContentLoaded', function() {
-    // Initialize Swiper thumbs
-    var swiperThumbs = new Swiper('.swiper-thumbs', {
-        slidesPerView: 4,
-        freeMode: true,
-        watchSlidesVisibility: true,
-        watchSlidesProgress: true,
-        clickable: true,
-    });
-
-    // Initialize Swiper main
-    var swiperMain = new Swiper('.swiper', {
-        slidesPerView: 1,
-        speed: 600,
-        loop: true,
-        autoplay: {
-            delay: 2000,
-        },
-        thumbs: {
-            swiper: swiperThumbs
-        },
-        
-    });
-});
-
-
-
-
 

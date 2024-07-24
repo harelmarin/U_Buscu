@@ -58,6 +58,15 @@ hr {
     margin-bottom: 2vh;
 }
 
+.divider {
+    align-items: center;
+    width: 100%;
+    opacity: 0.2;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    display: none;
+}
+
 
 
 /* MENU  BURGER */
@@ -459,16 +468,42 @@ html, body {
 
 @media screen and (min-width: 768px) {
     .container-titre h3 {
-        font-size: 30px;
+        font-size: 40px;
     }
 
     .container-titre p {
         font-size: 20px;
+        margin-bottom: 4vh;
+    }
+    .container-titre {
+        line-height: 1.8;
     }
     .container-pres {
         margin-top: 4vh;
     }
-    
+    .divider {
+        display: block; 
+    }
+    .first-img img {
+        display: none;
+    }
+    .container-commande h3 {
+        font-size: 30px;
+    }
+    .container-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container-img img {
+        width: 60vw;
+        height: 80vh;
+      
+    }
+
+    .top {
+        margin-top: 8vh;
+    }
 }
 
 
