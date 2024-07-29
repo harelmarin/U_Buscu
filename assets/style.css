@@ -332,7 +332,7 @@ html, body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 50%;
     height: 100%;
     padding-top: 2vh;
     margin-bottom: 5vh;
@@ -357,8 +357,29 @@ html, body {
     text-decoration: none;
     color:black
 }
+.container-commande-lieux {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
 
-
+.lieux {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    padding-top: 2vh;
+    margin-bottom: 5vh;
+}
+.lieux h3 {
+    font-size: 25px;
+    font-family: 'Bold';
+    color: #000000;
+    text-align: center;
+    margin-bottom: 2vh;
+}
 /* EXPLOITATION */ 
 
 .container-exploitation {
