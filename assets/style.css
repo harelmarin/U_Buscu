@@ -602,6 +602,11 @@ html, body {
     .text-details p {
         text-align: center;
     }
+    .container-commande-lieux {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 
