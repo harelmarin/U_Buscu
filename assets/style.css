@@ -21,6 +21,7 @@
 
 header {
     color: black;
+    width: 100%;
 }
 
 header h1 {
@@ -73,7 +74,6 @@ hr {
 
 .container-menu-burger {
     padding-top: 2.5vh;
-    padding-left: 25vw;
 }
 
 .burger {
@@ -207,6 +207,7 @@ html, body {
 .body-base {
     background-color: #F1F6F9;
     height: 100%;
+    width: 100%;
 
 }
 .first-img {
@@ -465,28 +466,32 @@ html, body {
     flex-direction: column;
     width: 50%;
     padding-left: 2vw;
+
 }
 
 .text-details h3 {
-    font-size: 40px;
+    font-size: 50px;
     font-family: 'Bold';
     color: #000000;
 }
 
 .text-details h4 {
-    font-size: 20px;
+    font-size: 30px;
     font-family: 'Regular';
     color: #000000;
-
+    margin-bottom: 2vh;
 }
 .text-details p {
-    font-size: 15px;
+    font-size: 25px;
     font-family: 'Regular';
     color: #000000;
-    line-height: 1.6;
+    line-height: 1;
     margin-top: 2vh;
 }
 
+.bold {
+    font-family: 'Bold'
+}
 
 /* MEDIA QUERIES */
 
@@ -580,8 +585,7 @@ html, body {
     .container-details-fromage {
         margin-top: 4vh;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
     }
     .img-details {
         width: 100%;
@@ -593,15 +597,18 @@ html, body {
     }
     .text-details h3 {
         font-size: 25px;
-        text-align: center;
+        
     }
     .text-details h4 {
         margin-top: 2vh;
-        font-size: 15px;
-        text-align: center;
+        font-size: 20px;
+        margin-bottom: 1vh;
+        
     }
     .text-details p {
-        text-align: center;
+        font-size: 15px;
+        line-height: 1.5;
+        margin: 0;
     }
     .container-commande-lieux {
         flex-direction: column;
@@ -611,6 +618,13 @@ html, body {
     .container-commande {
         width: 80%;
     }
+    .lieux {
+        width: 80%;
+    }
+    .text-details h3 {
+        font-size: 40px;
+    }
+    
 }
 
 
