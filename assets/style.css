@@ -51,12 +51,12 @@ header a {
     flex-direction: column;
 }
 
-hr {
-    align-items: center;
+.hr {
     width: 100%;
     opacity: 0.2;
     margin-top: 2vh;
     margin-bottom: 2vh;
+    border-bottom: 0.5px solid #000000;
 }
 
 .divider {
