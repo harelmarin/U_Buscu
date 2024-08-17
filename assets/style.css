@@ -466,26 +466,25 @@ html, body {
     flex-direction: column;
     width: 50%;
     padding-left: 2vw;
-
 }
 
 .text-details h3 {
-    font-size: 50px;
+    font-size: 40px;
     font-family: 'Bold';
     color: #000000;
 }
 
 .text-details h4 {
-    font-size: 30px;
+    font-size: 25px;
     font-family: 'Regular';
     color: #000000;
     margin-bottom: 2vh;
 }
 .text-details p {
-    font-size: 25px;
+    font-size: 20px;
     font-family: 'Regular';
     color: #000000;
-    line-height: 1;
+    line-height: 1.5;
     margin-top: 2vh;
 }
 
@@ -513,8 +512,7 @@ html, body {
         font-size: 20px;
     }
     .body-accueil {
-        background-color: #669FD2;
-        background-image: url('');
+        background-image: url('../assets/img/montagne.jpg');
     }
     .main-accueil {
         justify-content: center;
@@ -542,15 +540,19 @@ html, body {
 
 @media screen and (min-width: 768px) {
     .container-titre h3 {
-        font-size: 40px;
+        font-size: 30px;
     }
 
     .container-titre p {
-        font-size: 20px;
-        margin-bottom: 4vh;
+        font-size: 18px;
+        margin-bottom: 2vh;
     }
     .container-titre {
         line-height: 1.8;
+        width: 50%;
+    }
+    .commander a {
+      padding-top: 0vh;
     }
     .container-pres {
         margin-top: 4vh;
@@ -570,8 +572,8 @@ html, body {
         align-items: center;
     }
     .container-img img {
-        width: 60vw;
-        height: 80vh;
+        width: 40vw;
+        height: 60vh;
       
     }
 
